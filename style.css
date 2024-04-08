@@ -237,3 +237,50 @@ ul a {
 .copyright{
     padding-top: 5px;
 }
+
+
+/* Distortion starts from 692px and below */
+
+/* For screens smaller than 692px */
+@media only screen and (max-width: 692px) {
+    /* Navbar Adjustments */
+    .navbar {
+      flex-wrap: wrap; /* Wrap items on smaller screens */
+    }
+    .nav-logo,
+    .nav-search,
+    .nav-second,
+    .nav-cart {
+      flex: 1; /* Make elements shrink proportionally */
+    }
+    .search-select,
+    .search-input,
+    .search-icon {
+      width: 100%; /* Make search bar full width */
+    }
+    .panel-ops {
+      width: 100%; /* Full width for smaller screens */
+    }
+  
+    /* Hero Section Adjustments */
+    .hero-section {
+      justify-content: flex-start; /* Align hero content to top */
+    }
+  
+    /* Shop Section Adjustments */
+    .box {
+      width: 47%; /* Adjust product width for smaller screens */
+      margin: 10px 5px; /* Reduce margin between products */
+    }
+  
+    /* Footer Adjustments */
+    .foot-panel2,
+    .foot-panel3 {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center content */
+    }
+    .foot-panel2 ul {
+      text-align: center; /* Center footer links */
+    }
+  }
+  
